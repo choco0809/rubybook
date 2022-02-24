@@ -83,3 +83,12 @@ def price(item:"コーヒ",size:"ショート")
     items[item]+sizes[size]
 end
 puts price(item:"コーヒ")
+
+class String
+    def to_sym
+      puts "foo"
+      raise "bar"
+    end
+  end
+  
+  { "a".to_sym : 100 }
